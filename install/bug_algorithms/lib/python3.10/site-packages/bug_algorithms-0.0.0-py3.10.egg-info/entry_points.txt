@@ -1,0 +1,3 @@
+[console_scripts]
+bug1_node = bug_algorithms.bug1_node:main
+
