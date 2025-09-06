@@ -55,9 +55,9 @@ class Bug1Node(Node):
         self.wall_follow_distance = 0.7
         
         # ==================== INITIALIZATION LOG ====================
-        self.get_logger().info('🚀 Bug1 Navigation Node initialized!')
-        self.get_logger().info(f'📍 Goal: ({self.goal.x:.2f}, {self.goal.y:.2f})')
-        self.get_logger().info(f'🎯 Goal tolerance: {self.goal_tol}m')
+        self.get_logger().info('Bug1 Navigation Node initialized!')
+        self.get_logger().info(f'Goal: ({self.goal.x:.2f}, {self.goal.y:.2f})')
+        self.get_logger().info(f'Goal tolerance: {self.goal_tol}m')
         
     # ==================== CALLBACK FUNCTIONS ====================
     
