@@ -12,7 +12,7 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        (os.path.join('share', package_name, 'launch'), glob('launch/*.launch.py')),
+        #(os.path.join('share', glob(os.path.join('launch', '*launch.[pxy][yma]*'))))
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -23,7 +23,12 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'py_node = bug_algorithms.bug1_node:main',
+            'publisher = bug_algorithms.publisher:main',
+            'subscriber = bug_algorithms.subscriber:main',
+            'navigation = bug_algorithms.bug1_node:main',
             'bug1_node = bug_algorithms.bug1_node:main',
+            'bug_tangent =  bug_algorithms.bug_tangent:main',
         ],
     },
 )
